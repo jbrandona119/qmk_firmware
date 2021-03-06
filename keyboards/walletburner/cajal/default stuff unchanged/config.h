@@ -49,18 +49,6 @@
 /* Locking resynchronize hack */
 #define LOCKING_RESYNC_ENABLE
 
-/* for home row mods */
-#define TAPPING_TERM 175
-// use TAPPING_TERM_PER_KEY if more granular control is needed
-#define TAPPING_TERM_PER_KEY
-
-/* will cancel the mod tap and type keycode if hold and release mod tap key without hitting another key*/
-// #define RETRO_TAPPING
-/* lets user activate hold function when holding dual role key after having tapped it, only for mod tap keys */
-#define TAPPING_FORCE_HOLD_PER_KEY
-/*requires holding both keys for the tapping_term to trigger the hold function */
-#define IGNORE_MOD_TAP_INTERRUPT
-
 #define RGB_DI_PIN F7
 #ifdef RGB_DI_PIN
 #define RGBLIGHT_ANIMATIONS
