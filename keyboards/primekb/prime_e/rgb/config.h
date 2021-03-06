@@ -27,3 +27,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGB_DI_PIN B7
 #define RGBLED_NUM 8
 #define RGBLIGHT_ANIMATIONS
+
+/* for home row mods */
+#define TAPPING_TERM 180
+// use TAPPING_TERM_PER_KEY if more granular control is needed
+
+/* will cancel the mod tap and type keycode if hold and release mod tap key without hitting another key*/
+// #define RETRO_TAPPING
+/* lets user activate hold functiona when holding dual role key after having tapped it, only for mod tap keys */
+#define TAPPING_FORCE_HOLD_PER_KEY
+/*requires holding both keys for the tapping_term to trigger the hold function */
+#define IGNORE_MOD_TAP_INTERRUPT
