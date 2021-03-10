@@ -23,9 +23,27 @@
 #define BACKLIGHT_PIN B7
 
 #define DEBOUNCE 5
+
+/* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
+#define LOCKING_SUPPORT_ENABLE
+
+/* Locking resynchronize hack */
+#define LOCKING_RESYNC_ENABLE
+
+/* for home row mods */
 #define TAPPING_TERM 175
+// use TAPPING_TERM_PER_KEY if more granular control is needed
+#define TAPPING_TERM_PER_KEY
+
+/* will cancel the mod tap and type keycode if hold and release mod tap key without hitting another key*/
+// #define RETRO_TAPPING
+/* lets user activate hold function when holding dual role key after having tapped it, only for mod tap keys */
+#define TAPPING_FORCE_HOLD_PER_KEY
+/*requires holding both keys for the tapping_term to trigger the hold function */
+#define IGNORE_MOD_TAP_INTERRUPT
 
 #define USB_MAX_POWER_CONSUMPTION 100
 #define PERMISSIVE_HOLD
 #define IS_COMMAND() ( keyboard_report->mods == (MOD_BIT(KC_LSHIFT) | MOD_BIT(KC_RSHIFT)) )
 #endif
+

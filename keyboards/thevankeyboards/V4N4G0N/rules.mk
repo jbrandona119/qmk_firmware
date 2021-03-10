@@ -1,5 +1,5 @@
 # MCU name
-MCU = atmega32u4
+#MCU = atmega32u4
 
 # Bootloader selection
 #   Teensy       halfkay
@@ -30,13 +30,13 @@ BLUETOOTH_ENABLE = no       # Enable Bluetooth with the Adafruit EZ-Key HID
 AUDIO_ENABLE = no           # Audio output on port C6
 
 #FROM QMK ONLINE CONFIG IDK IF I NEED IT THO BUT KEEPING IT TO COMPARE CUZ TF I NEED THIS WORKING
-# MCU = atmega32u4
-# F_CPU = 16000000
-# ARCH = AVR8
-# F_USB = 16000000
+MCU = atmega32u4
+F_CPU = 16000000
+ARCH = AVR8
+F_USB = 16000000
 
-# OPT_DEFS += -DINTERRUPT_CONTROL_ENDPOINT
-# OPT_DEFS += -DBOOTLOADER_SIZE=4096
+OPT_DEFS += -DINTERRUPT_CONTROL_ENDPOINT
+OPT_DEFS += -DBOOTLOADER_SIZE=4096
 
 
 # NO_USB_STARTUP_CHECK = yes
