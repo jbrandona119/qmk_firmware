@@ -24,7 +24,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,
     KC_ESC,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,  KC_BSPC,
     TAB_1,   GUI_A,   ALT_S,   CTL_D,   SFT_F,   KC_G,    KC_H,    SFT_J,   CTL_K,   ALT_L,   GUI_S, ENT_2,
-    KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_UP, RSFT_T(KC_SLSH),
+    KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT,
     KC_LCTL, KC_LGUI, KC_LALT, TT(3),   SPC_2,   SPC_1,   KC_RALT, KC_RGUI, KC_RCTL, TO(3)
   ),
   [1]= LAYOUT(
@@ -149,9 +149,13 @@ uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
         case SFT_J:
             return TAPPING_TERM - 50;
         case ALT_S:
-            return TAPPING_TERM + 50;
+            return TAPPING_TERM + 75;
         case ALT_L:
-            return TAPPING_TERM + 50;
+            return TAPPING_TERM + 75;
+        case GUI_A:
+            return TAPPING_TERM + 75;
+        case GUI_S:
+            return TAPPING_TERM + 75;
         default:
             return TAPPING_TERM;
     }
