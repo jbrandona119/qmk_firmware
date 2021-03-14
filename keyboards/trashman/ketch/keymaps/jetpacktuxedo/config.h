@@ -21,6 +21,6 @@ SOFTWARE.
 */
 
 #pragma once
-
-#define RGBLIGHT_LAYERS
-#define TAPPING_TERM 150
+// had to comment out cuz it was messing with compiling idk why
+// #define RGBLIGHT_LAYERS
+// #define TAPPING_TERM 150
