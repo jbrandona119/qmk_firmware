@@ -56,3 +56,5 @@ SOFTWARE.
 /* will cancel the mod tap and type keycode if hold and release mod tap key without hitting another key*/
 // #define RETRO_TAPPING
 #define PERMISSIVE_HOLD
+/* giving the ol jetpacktuxedo rgb thing a try */
+#define RGBLIGHT_LAYERS
